@@ -73,7 +73,7 @@ public class Shop {
                 new OutputStreamWriter(Files.newOutputStream(filePath, StandardOpenOption.CREATE), "UTF-8"))) {
             out.append(output);
         } catch (final IOException e) {
-            logger.log(Level.SEVERE, "Error writing com.javase11.certification.productmanagement.data " + e.getMessage(), e);
+            logger.log(Level.SEVERE, "Error writing data " + e.getMessage(), e);
         }
     }
 }
